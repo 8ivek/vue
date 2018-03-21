@@ -6,15 +6,20 @@
 <body>
 <h2>Arguments</h2>
 <div id="app">
-	<p v-if="seen">{{ message.split('').reverse().join('') }}</p>
+	<p><a v-bind:href="hyperlink" target="_blank">Helpaid</a></p>
+	<p><a v-bind:href="hyperlink" target="_blank" v-on:click="doSomething">Click Here</a></p>
 </div>
 <script type="text/javascript">
 	var vm = new Vue({
 		el:'#app',
 		data:{
-			seen: true, // if seen is false <p> tag will be removed from DOM, which works on-fly. By on-fly i mean when we change the value of seen from console or by any means the <p> tag will be added or removed from the DOM.
-			message: 'Bivek!',
+			hyperlink:'https://www.helpaid.ca',
 		},
+		methods:{
+			doSomething : function(){
+				alert('Thanks for clicking!');
+			}
+		}
 	});
 </script>
 </body>
