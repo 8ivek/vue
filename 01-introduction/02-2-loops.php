@@ -7,7 +7,7 @@
 <div id="app">
 	<ul>
 		<li v-for="todo in todos">
-			<a v-bind:href="todo.link">{{ todo.text }}</a>
+			<a v-bind:href="todo.link" target="_blank">{{ todo.text }}</a>
 		</li>
 	</ul>
 </div>
@@ -16,9 +16,10 @@
 		el: '#app',
 		data: {
 			todos:[
-				{text:'Learn JS',link:'http://bivek.ca'},
-				{text:'Learn Vue',link:'http://fb.com'},
-				{text:'Build something awesome',link:'http://ig.com'},
+				{text:'Bivek Joshi',link:'http://bivek.ca'},
+				{text:'Facebook',link:'http://fb.com'},
+				{text:'Instagram',link:'http://instagram.com'},
+				{text:'Helpaid',link:'https://www.helpaid.ca'},
 			],
 		},
 	})
