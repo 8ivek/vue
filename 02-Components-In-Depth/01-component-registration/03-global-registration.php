@@ -13,6 +13,7 @@
     <component-a></component-a>
     <component-b></component-b>
 
+
     <h2>Example of Local components registration - Components Registration</h2>
 
     <component-c></component-c>
